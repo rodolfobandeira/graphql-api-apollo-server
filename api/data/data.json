@@ -1,40 +1,78 @@
 {
   "users": [
     {
-      "id": 2,
       "name": "Foo",
       "active": true,
-      "email": "a@a.com",
-      "role": 1
+      "email": "foo@example.com",
+      "role": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Bar",
+      "name": "User",
       "active": true,
-      "email": "g@g.com",
-      "role": 2
+      "email": "user@example.com",
+      "role": 3,
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Bar",
+      "name": "Owner",
       "active": true,
-      "email": "f@f.com",
-      "role": 3
+      "email": "owner@example.com",
+      "role": 2,
+      "id": 3
+    },
+    {
+      "name": "Owner",
+      "active": true,
+      "email": "owner@example.com",
+      "role": 2,
+      "createdAt": "2021-11-14T00:00:00.000Z",
+      "id": 4
+    },
+    {
+      "name": "updated",
+      "active": true,
+      "email": "updated@example.com",
+      "role": 2,
+      "id": 5
+    },
+    {
+      "name": "Owner",
+      "active": true,
+      "email": "owner@example.com",
+      "role": 1,
+      "createdAt": "2021-11-14T00:00:00.000Z",
+      "id": 7
+    },
+    {
+      "name": "Owner",
+      "active": true,
+      "email": "owner@example.com",
+      "role": 2,
+      "createdAt": "2021-11-14T00:00:00.000Z",
+      "id": 8
+    },
+    {
+      "name": "Owner",
+      "active": true,
+      "email": "owner@example.com",
+      "role": 3,
+      "createdAt": "2021-11-14T00:00:00.000Z",
+      "id": 9
     }
   ],
   "roles": [
     {
       "id": 1,
-      "type": "Admin"
+      "type": "USER"
     },
     {
       "id": 2,
-      "type": "Owner"
+      "type": "ADMIN"
     },
     {
       "id": 3,
-      "type": "User"
+      "type": "OWNER"
     }
   ]
 }
-
