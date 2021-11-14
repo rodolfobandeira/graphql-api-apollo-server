@@ -36,6 +36,7 @@ query {
 
 
 ```graphql
+# Add User
 mutation {
   addUser (
     user: {
@@ -54,6 +55,7 @@ mutation {
 ```
 
 ```graphql
+# Update User
 mutation {
   updateUser (
     id: 5
@@ -76,6 +78,7 @@ mutation {
 ```
 
 ```graphql
+# Remove user
 mutation {
   deleteUser (
     id: 6
