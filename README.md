@@ -23,7 +23,7 @@ npm run start:server
 Test with cURL:
 
 ```bash
-``curl --location --request POST 'http://localhost:4000/users' \
+curl --location --request POST 'http://localhost:4000/users' \
 --header 'Content-Type: application/json' \
 --data-raw '{"query":"query { users { name email active role { id type } } }","variables":{}}'
 ```
