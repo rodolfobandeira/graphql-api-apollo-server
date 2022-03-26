@@ -4,6 +4,7 @@ POC using Apollo server to interact with GraphQL
 
 Start GraphQL server:
 
+
 ```bash
 # Install dependencies:
 npm install
@@ -14,8 +15,21 @@ npm start
 
 
 # Start data-source server which is another API on port 3000
-npx json-server --watch api/data/dados.json
+npm run start:server
 ```
+
+---
+
+Test with cURL:
+
+```bash
+``curl --location --request POST 'http://localhost:4000/users' \
+--header 'Content-Type: application/json' \
+--data-raw '{"query":"query {\n  users {\n    name\n    email\n    active\n    role {\n      id\n      type\n    }\n  }\n}","variables":{}}'
+`
+
+
+
 
 ---
 
@@ -88,6 +102,3 @@ mutation {
   }
 }
 ```
-
-
-
